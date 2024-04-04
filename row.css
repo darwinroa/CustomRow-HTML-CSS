@@ -1,0 +1,30 @@
+.custom-arrow {
+  width: 16px;
+  height: 2px;
+  background-color: white;
+  transition: all .3s ease-in;
+}
+
+.custom-arrow::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 3px;
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(135deg);
+  transition: all .3s ease-in;
+}
+
+.custom-arrow::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: -3px;
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(45deg);
+  transition: all .3s ease-in;
+}
